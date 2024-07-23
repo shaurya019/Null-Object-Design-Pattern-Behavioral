@@ -1,0 +1,20 @@
+
+Key Concepts
+Interface or Abstract Class: Define an interface or abstract class for the objects.
+Real Implementations: Provide concrete implementations of the interface.
+Null Object: Implement the interface with a class that provides neutral or do-nothing behavior.
+
+Example in C++
+Let's create an example with a logging system where a Logger interface is used, and we provide a ConsoleLogger and a NullLogger.
+
+
+Explanation
+Logger Interface: This defines the log method that must be implemented by any concrete logger.
+ConsoleLogger: A concrete implementation that logs messages to the console.
+NullLogger: A Null Object implementation that provides do-nothing behavior.
+In the main function, we demonstrate using both ConsoleLogger and NullLogger. When using ConsoleLogger, messages are printed to the console. When using NullLogger, the log calls have no effect, avoiding the need for null checks.
+
+Advantages of Null Object Pattern
+Simplicity: Simplifies client code by avoiding null checks.
+Default Behavior: Provides a default behavior that can be used in place of null references.
+Decoupling: Decouples client code from concrete implementations.
